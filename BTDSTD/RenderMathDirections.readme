@@ -1,0 +1,15 @@
+Bytes The Dust keeps a standard for how we handle the directional vectors of the world.
+We do this so it's consistant for all projects and we don't need to change the math.
+
+positive X is left
+negative X is right
+
+positive Y is up
+negative Y is down
+
+positive Z is forward
+negative Z is backwards
+
+matrices are row, colume
+
+we support converting or conventions to match other Render APIs we support

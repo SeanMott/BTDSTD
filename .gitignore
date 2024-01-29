@@ -396,3 +396,16 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+*.recipe
+BTDSTD/bin-obj/Debug-windows-x86_64-AirRide/BTDSTD/BTDSTD.vcxproj.FileListAbsolute.txt
+BTDSTD/bin-obj/Debug-windows-x86_64-KARGarage/BTDSTD/BTDSTD.vcxproj.FileListAbsolute.txt
+BTDSTD/bin-obj/Debug-windows-x86_64-SmokACTGUI/BTDSTD/BTDSTD.vcxproj.FileListAbsolute.txt
+BTDSTD/bin-obj/Debug-windows-x86_64-SmokSDKInstaller/BTDSTD/BTDSTD.vcxproj.FileListAbsolute.txt
+BTDSTD/bin-obj/Release-windows-x86_64-AirRide/BTDSTD/BTDSTD.vcxproj.FileListAbsolute.txt
+*.vcxproj
+*.filters
+BTDSTD_C/bin-obj/Debug-windows-x86_64-AirRide/BTDSTD_C/BTDSTD_C.vcxproj.FileListAbsolute.txt
+BTDSTD_C/bin-obj/Debug-windows-x86_64-KARGarage/BTDSTD_C/BTDSTD_C.vcxproj.FileListAbsolute.txt
+BTDSTD_C/bin-obj/Debug-windows-x86_64-SmokACTGUI/BTDSTD_C/BTDSTD_C.vcxproj.FileListAbsolute.txt
+BTDSTD_C/bin-obj/Debug-windows-x86_64-SmokSDKInstaller/BTDSTD_C/BTDSTD_C.vcxproj.FileListAbsolute.txt
+BTDSTD_C/bin-obj/Release-windows-x86_64-AirRide/BTDSTD_C/BTDSTD_C.vcxproj.FileListAbsolute.txt
