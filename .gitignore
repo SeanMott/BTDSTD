@@ -409,3 +409,4 @@ BTDSTD_C/bin-obj/Debug-windows-x86_64-KARGarage/BTDSTD_C/BTDSTD_C.vcxproj.FileLi
 BTDSTD_C/bin-obj/Debug-windows-x86_64-SmokACTGUI/BTDSTD_C/BTDSTD_C.vcxproj.FileListAbsolute.txt
 BTDSTD_C/bin-obj/Debug-windows-x86_64-SmokSDKInstaller/BTDSTD_C/BTDSTD_C.vcxproj.FileListAbsolute.txt
 BTDSTD_C/bin-obj/Release-windows-x86_64-AirRide/BTDSTD_C/BTDSTD_C.vcxproj.FileListAbsolute.txt
+*.txt

@@ -23,7 +23,7 @@ bool BTD::IO::File::Open(const char* _path, const FileOP& OP)
 	path = _path;
 	op = OP;
 
-	file = fopen(path, ConvertToNative());
+	file = fopen(path, ConvertToNative(op));
 	if (!file)
 	{
 		BTD::Logger::LogError("BTDSTD", "File", "Open",
@@ -47,7 +47,7 @@ bool BTD::IO::File::Open(const std::string& _path, const FileOP& OP)
 	path = _path.c_str();
 	op = OP;
 
-	file = fopen(path, ConvertToNative());
+	file = fopen(path, ConvertToNative(op));
 	if (!file)
 	{
 		BTD::Logger::LogError("BTDSTD", "File", "Open",

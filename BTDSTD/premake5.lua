@@ -1,6 +1,6 @@
 
-include "C:\\GameDev\\Libraries\\yaml-cpp"
-include "C:\\GameDev\\BTDSTD_C"
+include "C:\\SmokSDK\\Libraries\\BTD-Libs\\yaml-cpp"
+include "C:\\SmokSDK\\BTDSTD\\BTDSTD_C"
 
     configurations
     {
@@ -43,15 +43,16 @@ include "C:\\GameDev\\BTDSTD_C"
     {
         "includes",
         
-        "C:\\GameDev\\Libraries\\yaml-cpp\\include",
-        "C:\\GameDev\\Libraries\\glm",
-        "C:\\GameDev\\Libraries\\glfw\\include",
-        "C:\\GameDev\\BTDSTD_C\\includes"
+        "C:\\SmokSDK\\Libraries\\BTD-Libs\\yaml-cpp\\include",
+        "C:\\SmokSDK\\Libraries\\BTD-Libs\\glm",
+        "C:\\SmokSDK\\Libraries\\BTD-Libs\\glfw\\include",
+        "C:\\SmokSDK\\BTDSTD\\BTDSTD_C\\includes"
     }
     
     links
     {
         "yaml-cpp",
+        "GLFW",
         "BTDSTD_C"
     }
     
@@ -90,7 +91,7 @@ include "C:\\GameDev\\BTDSTD_C"
         links
         {
            -- "C:\\GameDev\\Libraries\\yaml-cpp\\bin\\Debug-windows-x86_64\\yaml-cpp\\yaml-cpp.lib",
-            "C:\\GameDev\\Libraries\\glfw\\bin\\Debug-windows-x86_64\\GLFW\\GLFW.lib"
+            --"C:\\GameDev\\Libraries\\glfw\\bin\\Debug-windows-x86_64\\GLFW\\GLFW.lib"
         }
     
     filter "configurations:Release"
@@ -105,7 +106,7 @@ include "C:\\GameDev\\BTDSTD_C"
         links
         {
            -- "C:\\GameDev\\Libraries\\yaml-cpp\\bin\\Release-windows-x86_64\\yaml-cpp\\yaml-cpp.lib",
-            "C:\\GameDev\\Libraries\\glfw\\bin\\Release-windows-x86_64\\GLFW\\GLFW.lib"
+           -- "C:\\GameDev\\Libraries\\glfw\\bin\\Release-windows-x86_64\\GLFW\\GLFW.lib"
         }
     
     filter "configurations:Dist"
@@ -125,5 +126,5 @@ include "C:\\GameDev\\BTDSTD_C"
         links
         {
            -- "C:\\GameDev\\Libraries\\yaml-cpp\\bin\\Dist-windows-x86_64\\yaml-cpp\\yaml-cpp.lib",
-            "C:\\GameDev\\Libraries\\glfw\\bin\\Dist-windows-x86_64\\GLFW\\GLFW.lib"
+           -- "C:\\GameDev\\Libraries\\glfw\\bin\\Dist-windows-x86_64\\GLFW\\GLFW.lib"
         }

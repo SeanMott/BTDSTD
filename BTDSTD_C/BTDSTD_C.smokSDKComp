@@ -1,0 +1,12 @@
+name: "BTDSTD_C"
+SDKPath: "C:\\\\SmokSDK\\\\BTDSTD\\\\BTDSTD_C"
+SDKVer: "1.0.0"
+includeDepCount: 1
+includeDeps:
+  - "C:\\\\SmokSDK\\\\Libraries\\\\BTD-Libs\\\\glfw\\\\include"
+linkDepCount: 0
+linkDeps:
+  []
+premakeDepCount: 1
+premakeDeps:
+  - "C:\\\\SmokSDK\\\\Libraries\\\\BTD-Libs\\\\glfw"

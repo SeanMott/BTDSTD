@@ -1,7 +1,4 @@
-
---include "C:\\GameDev\\Libraries\\yaml-cpp"
-
-include "C:\\GameDev\\Libraries\\glfw"
+include "C:\\SmokSDK\\Libraries\\BTD-Libs\\glfw"
 
     configurations
     {
@@ -43,15 +40,11 @@ include "C:\\GameDev\\Libraries\\glfw"
     includedirs
     {
         "includes",
-        
-       -- "C:\\GameDev\\Libraries\\yaml-cpp\\include",
-       -- "C:\\GameDev\\Libraries\\glm",
-        "C:\\GameDev\\Libraries\\glfw\\include"
+        "C:\\SmokSDK\\Libraries\\BTD-Libs\\glfw\\include"
     }
     
     links
     {
-        --"yaml-cpp"
         "GLFW"
     }
     
@@ -87,26 +80,9 @@ include "C:\\GameDev\\Libraries\\glfw"
         defines "BTD_DEBUG"
         symbols "On"
     
-        links
-        {
-           -- "C:\\GameDev\\Libraries\\yaml-cpp\\bin\\Debug-windows-x86_64\\yaml-cpp\\yaml-cpp.lib",
-            "C:\\GameDev\\Libraries\\glfw\\bin\\Debug-windows-x86_64\\GLFW\\GLFW.lib"
-        }
-    
     filter "configurations:Release"
         defines "BTD_RELEASE"
         optimize "On"
-    
-        flags
-        {
-            
-        }
-
-        links
-        {
-           -- "C:\\GameDev\\Libraries\\yaml-cpp\\bin\\Release-windows-x86_64\\yaml-cpp\\yaml-cpp.lib",
-            "C:\\GameDev\\Libraries\\glfw\\bin\\Release-windows-x86_64\\GLFW\\GLFW.lib"
-        }
     
     filter "configurations:Dist"
         defines "BTD_DIST"
@@ -115,15 +91,4 @@ include "C:\\GameDev\\Libraries\\glfw"
         defines
         {
             "NDEBUG"
-        }
-    
-        flags
-        {
-           
-        }
-    
-        links
-        {
-           -- "C:\\GameDev\\Libraries\\yaml-cpp\\bin\\Dist-windows-x86_64\\yaml-cpp\\yaml-cpp.lib",
-            "C:\\GameDev\\Libraries\\glfw\\bin\\Dist-windows-x86_64\\GLFW\\GLFW.lib"
         }

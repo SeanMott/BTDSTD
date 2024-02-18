@@ -1,0 +1,16 @@
+name: "BTDSTD"
+SDKPath: "C:\\\\SmokSDK\\\\BTDSTD\\\\BTDSTD"
+SDKVer: "1.0.0"
+includeDepCount: 4
+includeDeps:
+  - "C:\\\\SmokSDK\\\\Libraries\\\\BTD-Libs\\\\yaml-cpp\\\\include"
+  - "C:\\\\SmokSDK\\\\Libraries\\\\BTD-Libs\\\\glm"
+  - "C:\\\\SmokSDK\\\\Libraries\\\\BTD-Libs\\\\glfw\\\\include"
+  - "C:\\\\SmokSDK\\\\BTDSTD\\\\BTDSTD_C\\\\includes"
+linkDepCount: 0
+linkDeps:
+  []
+premakeDepCount: 2
+premakeDeps:
+  - "C:\\\\SmokSDK\\\\Libraries\\\\BTD-Libs\\\\yaml-cpp"
+  - "C:\\\\SmokSDK\\\\BTDSTD\\\\BTDSTD_C"

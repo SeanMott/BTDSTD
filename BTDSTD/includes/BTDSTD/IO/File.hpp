@@ -78,41 +78,43 @@ namespace BTD::IO
 
 	private:
 
-		//converts a file op to the native one
-		inline const char* ConvertToNative()
-		{
-			switch (op)
-			{
-			case FileOP::TextRead_OpenExisting:
-				return "r";
-			case FileOP::TextWrite_OpenCreateStart:
-				return "w";
-			case FileOP::TextWrite_OpenCreateApp:
-				return "a";
-			case FileOP::TextBoth_OpenCreate:
-				return "r+";
-			case FileOP::TextBoth_OpenCreateNuke:
-				return "w+";
-			case FileOP::TextBoth_OpenCreateApp:
-				return "a+";
-			case FileOP::BinaryRead_OpenExisting:
-				return "rb";
-			case FileOP::BinaryWrite_OpenCreateStart:
-				return "wb";
-			case FileOP::BinaryWrite_OpenCreateApp:
-				return "ab";
-			case FileOP::BinaryBoth_OpenCreate:
-				return "rb+";
-			case FileOP::BinaryBoth_OpenCreateNuke:
-				return "r+b";
-			case FileOP::BinaryBoth_OpenCreateApp:
-				return "wb+";
-			default:
-				BTD::Logger::LogError("BTDSTD", "File", "ConvertToNative", "The flag give was not valid for file reading or writing!");
-				return "";
-			}
-		}
+		
 	};
+
+	//converts a file op to the native one
+	inline static const char* ConvertToNative(const FileOP op)
+	{
+		switch (op)
+		{
+		case FileOP::TextRead_OpenExisting:
+			return "r";
+		case FileOP::TextWrite_OpenCreateStart:
+			return "w";
+		case FileOP::TextWrite_OpenCreateApp:
+			return "a";
+		case FileOP::TextBoth_OpenCreate:
+			return "r+";
+		case FileOP::TextBoth_OpenCreateNuke:
+			return "w+";
+		case FileOP::TextBoth_OpenCreateApp:
+			return "a+";
+		case FileOP::BinaryRead_OpenExisting:
+			return "rb";
+		case FileOP::BinaryWrite_OpenCreateStart:
+			return "wb";
+		case FileOP::BinaryWrite_OpenCreateApp:
+			return "ab";
+		case FileOP::BinaryBoth_OpenCreate:
+			return "rb+";
+		case FileOP::BinaryBoth_OpenCreateNuke:
+			return "r+b";
+		case FileOP::BinaryBoth_OpenCreateApp:
+			return "wb+";
+		default:
+			BTD::Logger::LogError("BTDSTD", "File", "ConvertToNative", "The flag give was not valid for file reading or writing!");
+			return "";
+		}
+	}
 
 	//defines a open file dialog || returns the absolute file path
 	//if a empty string, it has been cancaled
